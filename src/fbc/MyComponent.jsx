@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Basic Syntax of Function Component
 function MyComponent() {
   return (
     <div>
