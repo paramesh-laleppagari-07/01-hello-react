@@ -1,0 +1,43 @@
+// src/propsExamples/App.jsx
+import React from "react";
+import WelcomeMessage from "./WelcomeMessage";
+import StudentCard from "./StudentCard";
+import UserProfile from "./UserProfile";
+import ProductCard from "./ProductCard";
+import DefaultWelcome from "./DefaultWelcome";
+
+function App() {
+  const productInfo = {
+    name: "React Course",
+    price: 499,
+    category: "Programming",
+  };
+
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>🎓 React Props Examples</h1>
+
+      {/* 1️⃣ Basic Prop */}
+      <WelcomeMessage name="Paramesh" />
+
+      {/* 2️⃣ Multiple Props */}
+      <StudentCard name="Seenu" age="23" course="MCA" />
+      <StudentCard name="Immadad Ali" age="40" course="Faculty" />
+
+      {/* 3️⃣ Class Component Props */}
+      <UserProfile
+        name="Paramesh"
+        role="Student"
+        college="Santhi Ram Engineering College"
+      />
+
+      {/* 4️⃣ Dynamic Props */}
+      <ProductCard product={productInfo} />
+
+      {/* 5️⃣ Default Props */}
+      <DefaultWelcome />
+    </div>
+  );
+}
+
+export default App;
