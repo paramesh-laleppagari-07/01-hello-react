@@ -1,0 +1,26 @@
+
+App.jsx code for statePractice folder programs
+
+import React from "react";
+import CounterFunction from "./statePractice/CounterFunction";
+import CounterClass from "./statePractice/CounterClass";
+import ControlledForm from "./statePractice/ControlledForm";
+import UseReducerCounter from "./statePractice/UseReducerCounter";
+import ComplexState from "./statePractice/ComplexState";
+
+function App() {
+  return (
+    <div style={{ padding: "20px" }}>
+      <h1>React State Practice 🚀</h1>
+      {/* Uncomment the component you want to test */}
+      {/* <TodoApp /> */}
+      <ControlledForm/>
+      <ComplexState />
+      <CounterFunction />
+      <CounterClass />
+      <ControlledForm />
+      <UseReducerCounter />
+    </div>
+  );
+}
+export default App;
