@@ -3,12 +3,19 @@ import React from 'react'
 import NameList from './components/ListRendering/NameList'
 import Person   from './components/ListRendering/Person'
 import StyleSheet from './Styling/StyleSheet'
+import InlineCss from './Styling/InlineCss'
+import styles from './AppStyles.module.css'
+import './AppStyles.css'
 
 
 function App() {
   return (
     <div>
-      <StyleSheet/>
+      <h1>Styles in react</h1>
+      <h1 className='error'>Error</h1>
+      <h1 className={styles.success}>Success</h1>
+      {/* <StyleSheet primary={true}/>
+      <InlineCss/> */}
       {/* <Person person={{ id: 1, name: 'Bruce', age: 30, skill: 'React' }} /> */}
     
     </div>
